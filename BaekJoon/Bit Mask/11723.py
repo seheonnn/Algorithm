@@ -1,4 +1,4 @@
-# 집합 S에 대한 연산 수행
+# 집합 S에 대한 연산 수행 (집합은 set 이용)
 import sys
 M = int(sys.stdin.readline())
 S = set()
