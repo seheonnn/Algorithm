@@ -1,4 +1,5 @@
 import sys
+sys.setrecursionlimit(10000)
 def DFS(v):
     visited[v] = 1
     for i in graph[v]:
@@ -14,5 +15,5 @@ for i in range(M):
     graph[a].append(b)
     graph[b].append(a)
 
-DFS(1)
+DFS(1) # 시작점이 1로 고정
 print(sum(visited)-1) # 시작지점 빼주기
