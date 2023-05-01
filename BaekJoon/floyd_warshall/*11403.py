@@ -14,4 +14,4 @@ def floyd_warshall():
                 #     graph[i][j] = graph[i][k] + graph[k][j]
 floyd_warshall()
 for v in graph:
-    print(*v)
+    print(*v) # 리스트의 값만 출력
