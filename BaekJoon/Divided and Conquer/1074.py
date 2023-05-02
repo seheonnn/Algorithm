@@ -1,3 +1,4 @@
+# https://ggasoon2.tistory.com/11
 import sys
 N, r, c = map(int, sys.stdin.readline().split())
 
