@@ -1,3 +1,4 @@
+# 삼각형 양 끝은 바로 위 수, 중간 수들은 위에 있는 두 개의 수 중 최댓값 +
 import sys
 N = int(sys.stdin.readline())
 dp = []
