@@ -94,7 +94,8 @@
       <workItem from="1711770029085" duration="599000" />
       <workItem from="1718759170831" duration="5394000" />
       <workItem from="1718856551935" duration="2751000" />
-      <workItem from="1719153237363" duration="2673000" />
+      <workItem from="1719153237363" duration="2780000" />
+      <workItem from="1719295290149" duration="3685000" />
     </task>
     <servers />
   </component>
@@ -132,6 +133,7 @@
     <SUITE FILE_PATH="coverage/BaekJoon$2667.coverage" NAME="2667 커버리지 결과" MODIFIED="1682081530457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/DFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$7662.coverage" NAME="7662 커버리지 결과" MODIFIED="1681809779043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/Priority Queue" />
     <SUITE FILE_PATH="coverage/BaekJoon$3_3.coverage" NAME="3-3 커버리지 결과" MODIFIED="1718874602385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOOK/Greedy" />
+    <SUITE FILE_PATH="coverage/BaekJoon$4_1.coverage" NAME="4-1 커버리지 결과" MODIFIED="1719302349202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOOK/구현" />
     <SUITE FILE_PATH="coverage/BaekJoon$test.coverage" NAME="test 커버리지 결과" MODIFIED="1718760873458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOOK" />
     <SUITE FILE_PATH="coverage/BaekJoon$_7662.coverage" NAME="*7662 커버리지 결과" MODIFIED="1681811141608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/Priority Queue" />
     <SUITE FILE_PATH="coverage/BaekJoon$5430.coverage" NAME="5430 커버리지 결과" MODIFIED="1682412736048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/Deque" />
