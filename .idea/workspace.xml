@@ -23,21 +23,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hoseheon/Desktop/BaekJoon/BOOK/자료구조&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/hoseheon/Desktop/BaekJoon/BOOK/BFS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BOOK/BFS" />
       <recent name="$PROJECT_DIR$/BOOK/자료구조" />
       <recent name="$PROJECT_DIR$/BOOK/구현" />
       <recent name="$PROJECT_DIR$/BOOK/Greedy" />
@@ -99,7 +100,7 @@
       <workItem from="1719153237363" duration="2780000" />
       <workItem from="1719295290149" duration="8839000" />
       <workItem from="1719555097964" duration="6162000" />
-      <workItem from="1719640298808" duration="1413000" />
+      <workItem from="1719640298808" duration="2816000" />
     </task>
     <servers />
   </component>
@@ -114,6 +115,7 @@
     <SUITE FILE_PATH="coverage/BaekJoon$7569.coverage" NAME="7569 커버리지 결과" MODIFIED="1682251922482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/BFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$10026.coverage" NAME="10026 커버리지 결과" MODIFIED="1682407547009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/BFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$11724.coverage" NAME="11724 커버리지 결과" MODIFIED="1682512928089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/BFS" />
+    <SUITE FILE_PATH="coverage/BaekJoon$DFStemp.coverage" NAME="DFStemp 커버리지 결과" MODIFIED="1719642560546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOOK/DFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$asd.coverage" NAME="asd 커버리지 결과" MODIFIED="1682250335361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/BFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$1260.coverage" NAME="1260 커버리지 결과" MODIFIED="1681953799630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/BFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$11403.coverage" NAME="11403 커버리지 결과" MODIFIED="1682761460890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/floyd_warshall" />
@@ -132,6 +134,7 @@
     <SUITE FILE_PATH="coverage/BaekJoon$5_6.coverage" NAME="5-6 커버리지 결과" MODIFIED="1719641422136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOOK/자료구조" />
     <SUITE FILE_PATH="coverage/BaekJoon$_10026.coverage" NAME="*10026 커버리지 결과" MODIFIED="1682409976493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/DFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$_1389.coverage" NAME="*1389 커버리지 결과" MODIFIED="1682772945274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/floyd_warshall" />
+    <SUITE FILE_PATH="coverage/BaekJoon$BFStemp.coverage" NAME="BFStemp 커버리지 결과" MODIFIED="1719643075447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOOK/BFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$16236.coverage" NAME="16236 커버리지 결과" MODIFIED="1682410864932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/BFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$ggf.coverage" NAME="ggf 커버리지 결과" MODIFIED="1682172259509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/BFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$12312312.coverage" NAME="12312312 커버리지 결과" MODIFIED="1683098318805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/Tree" />
@@ -165,6 +168,7 @@
     <SUITE FILE_PATH="coverage/BaekJoon$1111111111111111111111111.coverage" NAME="1111111111111111111111111 커버리지 결과" MODIFIED="1682760784361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/BFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$3_1.coverage" NAME="3-1 커버리지 결과" MODIFIED="1718764927192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOOK/Greedy" />
     <SUITE FILE_PATH="coverage/BaekJoon$9251.coverage" NAME="9251 커버리지 결과" MODIFIED="1683158298816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/Dynamic Programming" />
+    <SUITE FILE_PATH="coverage/BaekJoon$5_7.coverage" NAME="5-7 커버리지 결과" MODIFIED="1719641717833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOOK/자료구조" />
     <SUITE FILE_PATH="coverage/BaekJoon$11725.coverage" NAME="11725 커버리지 결과" MODIFIED="1684718558629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaekJoon/BFS" />
     <SUITE FILE_PATH="coverage/BaekJoon$3_6.coverage" NAME="3-6 커버리지 결과" MODIFIED="1719155845088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOOK/Greedy" />
   </component>
