@@ -6,7 +6,7 @@ a = [list(map(int, input().split())) for _ in range(n)]
 dp = [[0] * n for _ in range(n)]
 
 def initialize():
-    # DP 테이블 초기화
+    # DP 테이블 초기화 (시작점)
     dp[0][n-1] = a[0][n-1]
 
     # 첫 번째 행 초기화 (오른쪽에서 왼쪽으로)
