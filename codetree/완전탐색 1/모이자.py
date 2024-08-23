@@ -1,4 +1,4 @@
-# 완전탐색
+# 완전탐색 1
 
 import sys
 input = sys.stdin.readline
