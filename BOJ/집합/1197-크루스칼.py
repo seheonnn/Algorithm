@@ -1,3 +1,5 @@
+# MST 최소 스패닝 트리 : 모든 정점을 연결하는 최소 비용의 트리 - 크루스칼 알고리즘
+
 import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(10 ** 6)  # 재귀 제한 증가
@@ -21,7 +23,7 @@ parents = [i for i in range(V + 1)]
 answer = 0
 
 tree = []
-for _ in range(E):
+for _ in range(E): # 모든 간선을 구함
     node1, node2, grade = map(int, input().split())
     tree.append([grade, node1, node2])
 tree.sort()  # 가중치 기준 정렬
