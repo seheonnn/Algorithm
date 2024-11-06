@@ -35,37 +35,37 @@
 # print(cnt)
 
 # itertools 사용
-# import itertools, sys
-#
-# input = sys.stdin.readline
-#
-# n = int(input().strip())
-# cnt = 0
-#
-#
-# def check_beautiful(sequence):
-#     i = 0
-#     while i < len(sequence):
-#         digit = sequence[i]
-#
-#         # sequence[i:i+digit]와 [digit] * digit이 동일한지 확인
-#         if sequence[i:i + digit] != [digit] * digit:
-#             return False
-#
-#         # i 값 업데이트하여 다음 연속 숫자로 이동
-#         i += digit
-#     return True
-#
-#
-# # 1부터 4까지의 숫자로 이루어진 리스트 생성
-# elements = [1, 2, 3, 4] * n
-#
-# # 중복된 순열을 제거하기 위해 set 사용
-# unique_permutations = set(itertools.permutations(elements, n))
-#
-# # 각 순열에 대해 아름다운 수인지 확인
-# for perm in unique_permutations:
-#     if check_beautiful(list(perm)):
-#         cnt += 1
-#
-# print(cnt)
+import itertools, sys
+
+input = sys.stdin.readline
+
+n = int(input().strip())
+cnt = 0
+
+
+def check_beautiful(sequence):
+    i = 0
+    while i < len(sequence):
+        digit = sequence[i]
+
+        # sequence[i:i+digit]와 [digit] * digit이 동일한지 확인
+        if sequence[i:i + digit] != [digit] * digit:
+            return False
+
+        # i 값 업데이트하여 다음 연속 숫자로 이동
+        i += digit
+    return True
+
+
+# 1부터 4까지의 숫자로 이루어진 리스트 생성
+elements = [1, 2, 3, 4] * n
+
+# 중복된 순열을 제거하기 위해 set 사용
+unique_permutations = set(itertools.permutations(elements, n))
+
+# 각 순열에 대해 아름다운 수인지 확인
+for perm in unique_permutations:
+    if check_beautiful(list(perm)):
+        cnt += 1
+
+print(cnt)
