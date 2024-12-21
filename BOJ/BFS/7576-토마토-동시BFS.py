@@ -39,4 +39,5 @@ for i in range(n):
             sys.exit()
         else:
             r = max(r, graph[i][j])
+
 print(r - 1) # 1에서 시작하므로 마지막에 1 빼야
