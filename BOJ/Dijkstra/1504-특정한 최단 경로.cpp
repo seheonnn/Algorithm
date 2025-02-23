@@ -2,81 +2,74 @@
 #include <iostream>
 #include <vector>
 #include <climits>
-#include <deque>
-#define MAX 801
+#include <algorithm>
+#include <queue>
 
 using namespace std;
 
-int n, e;
-int v1, v2;
+int n, e, v1, v2;
+int startToV1, startToV2, v1ToV2, v2ToV1, v1ToN, v2ToN;
 vector<vector<pair<int, int>>> graph;
-int dist[MAX];
+vector<int> dist;
 
-void Dijkstra(vector<vector<pair<int, int>>>& graph, int v, int dist[]) {
-    for (int i = 1; i <= n; i++) {
-        dist[i] = INT_MAX;
-    }
-
-    deque<pair<int, int>> queue;
+void Dijkstra(int v) {
     dist[v] = 0;
-    queue.push_back({v, 0});
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+    pq.push({dist[v], v});
 
-    while (!queue.empty()) {
-        int cur = queue.front().first;
-        int dst = queue.front().second;
-        queue.pop_front();
+    while(!pq.empty()) {
+        int d = pq.top().first;
+        int cur = pq.top().second;
+        pq.pop();
 
-        if (dst > dist[cur]) continue;
-        for (auto edge : graph[cur]) {
-            int next = edge.first;
-            int w = edge.second;
-            int new_dist = dst + w;
-
-            if (new_dist < dist[next]) {
+        if (d > dist[cur]) continue;
+        for (auto edges : graph[cur]) {
+            int next = edges.first;
+            int w = edges.second;
+            int new_dist = w + d;
+            if (dist[next] > new_dist) {
                 dist[next] = new_dist;
-                queue.push_back({next, new_dist});
+                pq.push({dist[next], next});
             }
         }
     }
 }
 
 int main() {
-    scanf("%d %d", &n, &e);
-    graph.resize(n + 1);
+    cin >> n >> e;
+    graph.assign(n + 1, vector<pair<int, int>>());
+    dist.assign(n + 1, INT_MAX);
 
-    for (int i = 0; i < e; i++)  {
+    for (int i = 0; i < e; i++) {
         int u, v, w;
-        scanf("%d %d %d", &u, &v, &w);
+        cin >> u >> v >> w;
         graph[u].push_back({v, w});
         graph[v].push_back({u, w});
     }
-    scanf("%d %d", &v1, &v2);
 
-    Dijkstra(graph, 1, dist);
-    int startToV1 = dist[v1];
-    int startToV2 = dist[v2];
+    cin >> v1 >> v2;
 
-    Dijkstra(graph, v1, dist);
-    int v1ToV2 = dist[v2];
-    int v1ToN = dist[n];
+    Dijkstra(1);
+    startToV1 = dist[v1];
+    startToV2 = dist[v2];
 
-    Dijkstra(graph, v2, dist);
-    int v2ToV1 = dist[v1];
-    int v2ToN = dist[n];
+    dist.assign(n + 1, INT_MAX);
+    Dijkstra(v1);
+    v1ToV2 = dist[v2];
+    v1ToN = dist[n];
 
-    // 1 -> v1 -> v2 -> n
-    int path1 = startToV1 + v1ToV2 + v2ToN;
-    // 1 -> v2 -> v1 -> n
-    int path2 = startToV2 + v2ToV1 + v1ToN;
+    dist.assign(n + 1, INT_MAX);
+    Dijkstra(v2);
+    v2ToV1 = dist[v1];
+    v2ToN = dist[n];
 
-    // INT_MAX + 5 한다고 INT_MAX 유지되지 않음. 정수 오버플로 문제.
-    // path1 >= INT_MAX 같은 조건은 부정확함
+    int r = INT_MAX;
+    if (startToV1 == INT_MAX || startToV2 == INT_MAX || v1ToV2 == INT_MAX || v2ToV1 == INT_MAX || v1ToN == INT_MAX || v2ToN == INT_MAX) {
+        r = -1;
+    } else {
+        r = min(startToV1 + v1ToV2 + v2ToN, startToV2 + v2ToV1 + v1ToN);
+    }
 
-    if (startToV1 == INT_MAX || v1ToV2 == INT_MAX || v2ToN == INT_MAX ||
-    startToV2 == INT_MAX || v2ToV1 == INT_MAX || v1ToN == INT_MAX)
-        printf("-1\n");
-    else
-        printf("%d\n", path1 < path2 ? path1 : path2);
-
+    cout << r;
     return 0;
 }
