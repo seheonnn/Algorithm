@@ -14,7 +14,7 @@ for i in range(1, n + 1):
 
 r = -sys.maxsize
 
-# (x1, y1)부터 (x2, y2)까지의 부분합 계산
+# (x1, y1)부터 (x2, y2)까지의 부분합_누적합 계산
 for x1 in range(1, n + 1):
     for y1 in range(1, m + 1):
         for x2 in range(x1, n + 1):
