@@ -1,41 +1,41 @@
-// 프로그래머스 단어 변환 BFS
 #include <string>
 #include <vector>
 #include <queue>
 
 using namespace std;
 
-bool canChange(string str, string target) {
+vector<bool> visited;
+
+bool canChange(string cur, string target) {
     int cnt = 0;
-    for(int i = 0; i < str.size(); i++) {
-        if (str[i] != target[i]) {
-            cnt++;
-        }
+    for (int i = 0; i < cur.size(); i++) {
+        if (cur[i] != target[i]) cnt++;
     }
     return cnt == 1;
 }
 
-vector<bool> visited;
-
-int solution(string begin, string target, vector<string> words) {
-    int answer = 0;
-    visited.assign(words.size(), false);
+int BFS(string begin, string target, vector<string> words) {
     queue<pair<string, int>> q;
     q.push({begin, 0});
 
-    while (!q.empty()) {
-       auto[cur, cnt] = q.front();
+    while(!q.empty()) {
+        auto [cur, cnt] = q.front();
         q.pop();
-        if (cur == target) {
-            return cnt;
-        }
+
+        if (cur == target) return cnt;
 
         for (int i = 0; i < words.size(); i++) {
             if (!visited[i] && canChange(cur, words[i])) {
-                visited[i] = true;
                 q.push({words[i], cnt + 1});
+                visited[i] = true;
             }
         }
     }
-    return answer;
+    return 0;
+}
+
+int solution(string begin, string target, vector<string> words) {
+    visited.assign(words.size(), false);
+
+    return BFS(begin, target, words);
 }
