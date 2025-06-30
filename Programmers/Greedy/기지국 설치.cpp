@@ -10,7 +10,7 @@ int solution(int n, vector<int> stations, int w) {
         // 현재 기지국의 왼쪽에 빈 구역이 존재하는 경우
         if (left > last + 1) {
             int gap = left - (last + 1);  // 빈 구역의 크기
-            answer += (gap + range - 1) / range;  // 필요한 기지국 개수 계산
+            answer += (gap + range - 1) / range;  // 필요한 기지국 개수 계산 (올림)
         }
 
         last = right; // 현재 기지국이 커버하는 가장 끝 부분을 저장
