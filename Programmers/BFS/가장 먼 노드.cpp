@@ -1,15 +1,13 @@
-// 프로그래머스 가장 먼 노드 BFS
 #include <string>
 #include <vector>
 #include <queue>
 
 using namespace std;
 
-vector<vector<int>> graph;
-vector<int> visited;
-void BFS(int v) {
+void BFS(int v, int n, vector<vector<int>>& graph, vector<int>& visited) {
     queue<int> q;
     q.push(v);
+    visited[v] = 1;
 
     while(!q.empty()) {
         int cur = q.front();
@@ -26,24 +24,22 @@ void BFS(int v) {
 
 int solution(int n, vector<vector<int>> edge) {
     int answer = 0;
-    graph.assign(n + 1, vector<int>());
-    visited.assign(n + 1, 0);
+    vector<vector<int>> graph(n + 1, vector<int> ());
+    vector<int> visited(n + 1, 0);
 
     for (auto tmp : edge) {
         graph[tmp[0]].push_back(tmp[1]);
         graph[tmp[1]].push_back(tmp[0]);
     }
 
-    visited[1] = 1;
-    BFS(1);
-
-    int maxDis = 0;
+    BFS(1, n, graph, visited);
+    int maxLen = 0;
     for (int i = 1; i <= n; i++) {
-        maxDis = max(maxDis, visited[i]);
+        if (maxLen < visited[i]) maxLen = visited[i];
     }
 
     for (int i = 1; i <= n; i++) {
-        if (visited[i] == maxDis) answer++;
+        if (maxLen == visited[i]) answer++;
     }
 
     return answer;
