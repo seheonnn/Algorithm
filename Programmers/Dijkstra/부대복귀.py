@@ -1,10 +1,9 @@
 import heapq
 
 
-def dijkstra(n, start, dist, graph):
+def dijkstra(graph, dist, start):
     dist[start] = 0
-    pq = [(0, start)]
-
+    pq = [(dist[start], start)]
     while pq:
         d, cur = heapq.heappop(pq)
 
@@ -13,7 +12,7 @@ def dijkstra(n, start, dist, graph):
             new_dist = d + 1
             if new_dist < dist[next]:
                 dist[next] = new_dist
-                heapq.heappush(pq, (dist[next], next))
+                heapq.heappush(pq, (new_dist, next))
 
 
 def solution(n, roads, sources, destination):
@@ -25,7 +24,7 @@ def solution(n, roads, sources, destination):
         graph[u].append(v)
         graph[v].append(u)
 
-    dijkstra(n, destination, dist, graph)
+    dijkstra(graph, dist, destination)
 
     for src in sources:
         if dist[src] == float('inf'):
