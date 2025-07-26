@@ -30,6 +30,7 @@ int main() {
         int u, v;
         long long w;
         cin >> u >> v >> w;
+        // 같은 도로가 중복으로 주어질 수도
         dist[u][v] = min(dist[u][v], w);
     }
 
