@@ -1,14 +1,15 @@
 import heapq
 
-
 def dijkstra(n, start, graph):
     dist = [float('inf')] * (n + 1)
+    pq = []
     dist[start] = 0
-    pq = [(0, start)]
+    heapq.heappush(pq, (dist[start], start))
 
     while pq:
         d, cur = heapq.heappop(pq)
         if d > dist[cur]: continue
+
         for next, w in graph[cur]:
             new_dist = d + w
             if dist[next] > new_dist:
@@ -16,7 +17,6 @@ def dijkstra(n, start, graph):
                 heapq.heappush(pq, (dist[next], next))
 
     return dist
-
 
 def solution(n, s, a, b, fares):
     graph = [[] for _ in range(n + 1)]
@@ -30,8 +30,9 @@ def solution(n, s, a, b, fares):
     from_b = dijkstra(n, b, graph)
 
     r = float('inf')
+    # 합승 지점 탐색
     for i in range(1, n + 1):
-        if (from_s[i] != float('inf') and from_a[i] != float('inf') and from_b[i] != float('inf')):
+        if from_s[i] != float('inf') and from_a[i] != float('inf') and from_b[i] != float('inf'):
             r = min(r, from_s[i] + from_a[i] + from_b[i])
 
     return r
