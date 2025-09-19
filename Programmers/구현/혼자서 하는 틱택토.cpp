@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-나의 말:
 #include <string>
 #include <vector>
 
